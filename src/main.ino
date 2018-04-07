@@ -1,5 +1,4 @@
 #include <ESP8266WebServer.h>
-#include <WifiClient.h>
 
 // Wemos D1 Mini pin mappings
 // A poor man's dictionary, because everybody is broke in low level C++
