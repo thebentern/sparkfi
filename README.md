@@ -39,3 +39,9 @@ platformio device monitor --baud 9600
 Some basic diagnostic logging is written to the serial log. Start there if you are having network issues.
 
 ![Serial logging](serial.PNG)
+
+## Changing the web interface
+
+As a convenience when I started developing the html for this project. I created it in the `src/index.html` fle. Because copying and serving a hefty file from SPIFFS file system on the ESP8266 is a somewhat unnecessary complication, I chose to generate a method in `html.ino` to serve up the html. In order to get any changes in the html into the `html.ino`, I wrote a very crude NodeJs solution to generate the `html.ino` from `index.html`. All of that being said, if you wish to make any changes to the interface, simply change the `index.html` file and run ```cmd
+node index.js
+``` in the root directory of the repository. That will regenerate the html in `html.ino`.
