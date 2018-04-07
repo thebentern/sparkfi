@@ -19,13 +19,41 @@ void handleRoot()
 void handleSpark() 
 {
   logRequest("200 - Spark");
+
+  writeChannels();
+  delayForDuration();
+  deactivatePins();
+
+  sendOK();
+}
+
+void writeChannels() 
+{
   for (int i = 0; i < server.args(); i++ ) 
   {
-    Serial.print(server.argName(i));
-    Serial.println(server.arg(i));      
+    if (server.argName(i).equals("channel"))
+    {
+      int channel = server.arg(i).toInt();
+      digitalWrite(PIN_MAPPINGS[channel], LOW);
+      Serial.print("Firing channel ");
+      Serial.print(server.arg(i));
+      Serial.println();  
+    }
   }
-  Serial.println(server.arg('channels'));
-  sendOK();
+}
+
+void delayForDuration() 
+{
+  for (int i = 0; i < server.args(); i++ ) 
+  {
+    if (server.argName(i).equals("duration"))
+    {
+      int duration = server.arg(i).toInt();
+      delay(duration);
+      Serial.print("Firing for duration ");
+      Serial.print(server.arg(i));      
+    }
+  }
 }
 
 void handleNotFound() 
