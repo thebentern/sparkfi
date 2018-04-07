@@ -4,7 +4,7 @@
 
 8 channel relay based firework igniter for Wemos D1 mini ESP8266 platform
 
-## Basic installation and usage
+## Basic installation
 
 * Clone repository
 
