@@ -38,4 +38,4 @@ platformio device monitor --baud 9600
 
 Some basic diagnostic logging is written to the serial log. Start there if you are having network issues.
 
-![Serial logging](serial.png)
+![Serial logging](serial.PNG)
