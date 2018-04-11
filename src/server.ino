@@ -73,7 +73,8 @@ void logRequest(String message)
 {
   Serial.println(message);
   
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(200);
-  digitalWrite(LED_BUILTIN, HIGH);
+  // This is problematic because it fires D2
+  // digitalWrite(LED_BUILTIN, LOW);
+  // delay(200);
+  // digitalWrite(LED_BUILTIN, HIGH);
 }
