@@ -34,6 +34,10 @@ platformio run --target upload
 platformio device monitor --baud 9600
 ```
 
+## Basic example of wiring
+
+![Fritzing diagram](example_sketch_bb.png)
+
 ### Troubleshooting
 
 #### Serial logging
