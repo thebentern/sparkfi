@@ -53,7 +53,7 @@ String getHtml()
   html += "                    <div class=\"form-group\">";
   html += "                        <label for=\"example-text-input\" class=\"col-2 col-form-label\">Duration</label>";
   html += "                        <div class=\"\">";
-  html += "                            <input class=\"form-control\" type=\"number\" value=\"2000\" id=\"ignition-duration\" />";
+  html += "                            <input class=\"form-control\" type=\"number\" value=\"500\" id=\"ignition-duration\" />";
   html += "                        </div>";
   html += "                    </div>";
   html += "                </div>";
