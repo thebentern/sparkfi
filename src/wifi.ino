@@ -2,7 +2,7 @@
 #include <ESP8266mDNS.h>
 
 #define SSID      "SparkFi"
-#define PASSWORD  "spark"
+#define PASSWORD  "spark2018"
 
 void initializeWifi() 
 {
